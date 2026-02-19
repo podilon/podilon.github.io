@@ -14,181 +14,179 @@
 body{
     font-family:'Inter',sans-serif;
     background:#0f172a;
-    color:#f1f5f9;
+    color:#f8fafc;
 }
 
 header{
-    padding:80px 20px;
+    padding:100px 20px;
     text-align:center;
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    background:linear-gradient(135deg,#1d4ed8,#7c3aed);
 }
 
 header h1{
-    font-size:2.8rem;
+    font-size:3rem;
     font-weight:700;
 }
 
-header p{
+header h2{
+    font-weight:400;
     margin-top:15px;
-    font-size:1.2rem;
     opacity:0.9;
+}
+
+header p{
+    margin-top:20px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0.85;
 }
 
 .container{
     max-width:1100px;
     margin:auto;
-    padding:60px 20px;
+    padding:80px 20px;
 }
 
 .section{
-    margin-bottom:60px;
+    margin-bottom:80px;
 }
 
-.section h2{
-    font-size:1.8rem;
-    margin-bottom:25px;
+.section h3{
+    font-size:1.9rem;
+    margin-bottom:30px;
     color:#38bdf8;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 .card{
     background:#1e293b;
-    padding:25px;
-    border-radius:15px;
-    transition:.3s;
+    padding:30px;
+    border-radius:16px;
+    transition:.3s ease;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-6px);
     background:#334155;
-}
-
-ul{
-    list-style:none;
-}
-
-li{
-    margin-bottom:10px;
 }
 
 .badge{
     display:inline-block;
-    padding:6px 10px;
+    padding:6px 12px;
+    margin:5px 5px 0 0;
     background:#2563eb;
     border-radius:8px;
-    margin:5px 5px 0 0;
     font-size:0.8rem;
 }
 
+ul{list-style:none}
+
+li{margin-bottom:10px}
+
 footer{
     text-align:center;
-    padding:30px;
+    padding:40px;
     background:#020617;
     font-size:0.9rem;
     opacity:0.6;
 }
 
-a{
-    color:#38bdf8;
-    text-decoration:none;
+.highlight{
+    color:#facc15;
 }
+
 </style>
 </head>
 <body>
 
 <header>
     <h1>Paulo Odilon</h1>
-    <p>Especialista em Tecnologia, Educação Profissional e Metodologias Ativas</p>
+    <h2>Tecnologia • Educação Profissional • Inovação</h2>
+    <p>
+        Especialista em docência para ensino profissionalizante e desenvolvimento de soluções tecnológicas.
+        Integro educação, metodologias ativas e tecnologia para formar profissionais preparados para o mercado.
+    </p>
 </header>
 
 <div class="container">
 
     <div class="section">
-        <h2><i class="fa-solid fa-user-graduate"></i> Sobre</h2>
+        <h3><i class="fa-solid fa-user-graduate"></i> Perfil Profissional</h3>
         <p>
-            Profissional com mais de 13 anos de experiência em educação profissional,
-            atuando nas áreas de Tecnologia da Informação, Gestão, Turismo e Hospitalidade.
-            Experiência em ensino presencial e remoto, metodologias ativas e formação técnica.
+            Mais de <span class="highlight">13 anos de experiência</span> em educação profissional,
+            atuando nos segmentos de Tecnologia da Informação, Gestão, Turismo e Hospitalidade.
+            Experiência consolidada em ensino presencial e remoto, desenvolvimento de projetos educacionais
+            e aplicação de metodologias ativas.
         </p>
     </div>
 
     <div class="section">
-        <h2><i class="fa-solid fa-code"></i> Competências Técnicas</h2>
+        <h3><i class="fa-solid fa-code"></i> Competências Técnicas</h3>
         <div>
             <span class="badge">Python</span>
             <span class="badge">Java</span>
             <span class="badge">JavaScript</span>
-            <span class="badge">Flutter (Dart)</span>
+            <span class="badge">Flutter</span>
             <span class="badge">C</span>
             <span class="badge">MySQL</span>
+            <span class="badge">Scrum</span>
+            <span class="badge">DevOps</span>
+            <span class="badge">AWS Cloud</span>
             <span class="badge">Excel Avançado</span>
-            <span class="badge">Scrum & Agile</span>
-            <span class="badge">AWS Cloud Foundations</span>
-            <span class="badge">LGPD Foundations</span>
         </div>
     </div>
 
     <div class="section">
-        <h2><i class="fa-solid fa-briefcase"></i> Experiência Profissional</h2>
+        <h3><i class="fa-solid fa-briefcase"></i> Experiência</h3>
         <div class="grid">
             <div class="card">
-                <h3>Instrutor de Educação Profissional</h3>
-                <p><strong>SENAC / CE</strong></p>
-                <p>Atuação em cursos de Informática, Excel, Gestão e Tecnologia da Informação.</p>
+                <h4>Instrutor de Educação Profissional</h4>
+                <p>SENAC / CE</p>
+                <p>Docência em Informática, Excel, Gestão e Tecnologia da Informação.</p>
             </div>
 
             <div class="card">
-                <h3>Instrutor – Jovem Aprendiz</h3>
-                <p><strong>CIEE & Instituições Parceiras</strong></p>
-                <p>Formação em gestão, ética profissional, liderança e comunicação.</p>
+                <h4>Formação Técnica & Jovem Aprendiz</h4>
+                <p>Instituições Parceiras</p>
+                <p>Capacitação em gestão, liderança, ética profissional e tecnologia.</p>
             </div>
 
             <div class="card">
-                <h3>Instrutor Técnico</h3>
-                <p><strong>Instituições Técnicas</strong></p>
-                <p>Docência em Administração, Logística, Estatística e Qualidade.</p>
+                <h4>Projetos Educacionais</h4>
+                <p>Programas Públicos e Corporativos</p>
+                <p>Atuação em programas de qualificação profissional e inovação educacional.</p>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+        <h3><i class="fa-solid fa-graduation-cap"></i> Formação</h3>
         <ul>
-            <li>Especialização em Docência para Ensino Profissionalizante – SENAC</li>
+            <li>Especialização em Docência para Ensino Profissionalizante</li>
             <li>Graduação em Análise e Desenvolvimento de Sistemas</li>
-            <li>Graduação em Hotelaria – IFCE</li>
+            <li>Graduação em Hotelaria (Gestão)</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2><i class="fa-solid fa-diagram-project"></i> Áreas de Atuação</h2>
-        <ul>
-            <li>✔ Educação Profissional e Técnica</li>
-            <li>✔ Desenvolvimento de Sistemas</li>
-            <li>✔ Metodologias Ativas</li>
-            <li>✔ Projetos Ágeis e Scrum</li>
-            <li>✔ Cultura DevOps</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2><i class="fa-solid fa-shield-halved"></i> Conformidade & Ética</h2>
+        <h3><i class="fa-solid fa-shield-halved"></i> Ética & Conformidade</h3>
         <p>
             Formação em fundamentos da Lei Geral de Proteção de Dados (LGPD),
-            aplicando boas práticas de segurança da informação e ética digital
-            na educação e tecnologia.
+            aplicando boas práticas de segurança da informação, ética digital
+            e responsabilidade no uso de tecnologia.
         </p>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Paulo Odilon • Tecnologia & Educação • Portfólio Profissional
+    © 2026 Paulo Odilon • Tecnologia & Educação • https://podilon.github.io
 </footer>
 
 </body>
